@@ -1,0 +1,24 @@
+[submodule "pi-plan-mode"]
+	path = pi-plan-mode
+	url = https://github.com/milanglacier/pi-plan-mode.git
+[submodule "pi-session-model"]
+	path = pi-session-model
+	url = https://github.com/milanglacier/pi-session-model.git
+[submodule "pi-dynamic-workflow"]
+	path = pi-dynamic-workflow
+	url = https://github.com/milanglacier/pi-dynamic-workflow.git
+[submodule "pi-gemini-patch"]
+	path = pi-gemini-patch
+	url = https://github.com/milanglacier/pi-gemini-patch.git
+[submodule "pi-regenerate-last-response"]
+	path = pi-regenerate-last-response
+	url = https://github.com/milanglacier/pi-regenerate-last-response.git
+[submodule "pi-background-tasks"]
+	path = pi-background-tasks
+	url = https://github.com/milanglacier/pi-background-tasks.git
+[submodule "pi-minimal-permission-system"]
+	path = pi-minimal-permission-system
+	url = https://github.com/milanglacier/pi-minimal-permission-system.git
+[submodule "pi-theme-switcher"]
+	path = pi-theme-switcher
+	url = https://github.com/milanglacier/pi-theme-switcher.git
