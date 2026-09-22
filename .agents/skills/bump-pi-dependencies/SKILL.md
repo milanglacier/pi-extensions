@@ -77,10 +77,12 @@ setup was incomplete.
 - Do not obtain green checks through broad casts, `any`, suppression comments,
   weaker compiler settings, or excluding failing production code. Fix the actual
   mismatch; disclose unavoidable test-harness boundary assertions.
-- Also run the upgrade check with `skipLibCheck: false` to expose declaration
-  problems. This is separate from application strictness: skipping library
-  internals does not itself make imported SDK types fake. Investigate failures
-  and report any necessary exemption rather than claiming a clean full check.
+- `skipLibCheck: true` is acceptable and does not weaken checking of the
+  project's own code against imported Pi APIs; it skips internal consistency
+  checking within dependency declaration files. Do not require a separate
+  `skipLibCheck: false` run unless investigating a suspected upstream declaration
+  defect. Never use local shims or compiler exclusions to hide errors at the
+  project's actual Pi API boundary.
 
 ## Completion criteria
 
