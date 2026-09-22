@@ -1,9 +1,9 @@
 # pi-extensions
 
-A monorepo for the collection of [pi](https://pi.dev) extensions I maintain.
-Each extension lives in its own submodule with its own GitHub repository and
-can be installed independently via `pi install npm:<package>` or
-`pi install github:milanglacier/<repo>`.
+A monorepo for the collection of [pi](https://pi.dev) extensions and other
+pi-related projects I maintain. Each project lives in its own submodule with
+its own GitHub repository. Extensions can be installed independently via
+`pi install npm:<package>` or `pi install github:milanglacier/<repo>`.
 
 ## Extensions
 
@@ -61,6 +61,21 @@ Patches outgoing Google/Gemini provider requests so all Gemini safety
 categories use `BLOCK_NONE`, correctly merging the settings into the request's
 `config` object (OpenRouter Gemini models are excluded). There is no toggle —
 if the extension is loaded, the patch applies to matching requests.
+
+## Pi-related projects
+
+Projects that are not pi extensions, but are built on top of pi and maintained
+here.
+
+### [pi-tau-web-server](https://github.com/milanglacier/pi-tau-web-server)
+
+Tau is a browser workspace for pi: a standalone Node.js server that spawns and
+manages multiple live `pi --mode rpc` sessions in parallel. Each in-page tab is
+its own pi session, sessions survive browser reloads while the server runs, and
+extension UI dialogs are forwarded to the browser. It also adds a session
+history browser, session tree/branching, and multi-device access. It is
+distributed on npm — install it with `npm install --global pi-tau-web-server`
+and run `pi-tau-web-server` — so it is not loaded as a pi extension.
 
 ## Development
 

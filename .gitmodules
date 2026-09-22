@@ -22,3 +22,6 @@
 [submodule "pi-theme-switcher"]
 	path = pi-theme-switcher
 	url = https://github.com/milanglacier/pi-theme-switcher.git
+[submodule "pi-tau-web-server"]
+	path = pi-tau-web-server
+	url = https://github.com/milanglacier/pi-tau-web-server.git
