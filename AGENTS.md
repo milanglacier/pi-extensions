@@ -27,9 +27,8 @@ submodule, you MUST read its local AGENTS.md if it has one.
 - Read the submodule's local AGENTS.md first (if it has one, see list above);
   it overrides this file for work in that submodule.
 - Submodules are independent repos: edit/test inside the submodule, commit there
-  first (`master`; `pi-background-tasks` and `pi-tau-web-server` use `main`),
-  then update the gitlink in this monorepo (`git add <submodule>` + commit).
-  Don't mix submodules in one commit.
+  first (all submodules use `main`), then update the gitlink in this monorepo
+  (`git add <submodule>` + commit). Don't mix submodules in one commit.
 - Don't commit a submodule with a dirty working tree unless intentional.
 - Run a project's own commands (`npm run typecheck`, `npm test`) with the
   submodule as cwd; each pins its own node_modules.
