@@ -1,6 +1,6 @@
 ---
 name: bump-pi-dependencies
-description: Upgrade Pi coding agent dependencies to the latest stable release across this pi-extensions monorepo's subprojects. Use for bulk Pi dependency bumps, lockfile refreshes, Pi API migrations, or checking extension compatibility with a new Pi release. Prefer lockfile-only upgrades, minimal backward compatibility, and strict typechecking against real installed Pi declarations.
+description: Upgrade Pi coding agent dependencies to the latest stable release across this pi-extensions monorepo's subprojects. Use for bulk Pi dependency bumps, lockfile refreshes, Pi API migrations, or checking extension compatibility with a new Pi release.
 ---
 
 # Bump Pi dependencies
