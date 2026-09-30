@@ -77,6 +77,15 @@ categories use `BLOCK_NONE`, correctly merging the settings into the request's
 `config` object (OpenRouter Gemini models are excluded). There is no toggle —
 if the extension is loaded, the patch applies to matching requests.
 
+### [pi-subagents](https://github.com/milanglacier/pi-subagents)
+
+A fork of [tintinweb/pi-subagents](https://github.com/tintinweb/pi-subagents)
+maintained here: Claude Code-style autonomous sub-agents for pi. Spawn
+specialized agents in isolated sessions, each with its own tools, system
+prompt, model, and thinking level; run them in the background, steer them
+mid-run, resume finished sessions, define custom agent types, and orchestrate
+many at once with deterministic JavaScript workflows.
+
 ## Development
 
 Each top-level directory is a git submodule pointing at its own repository.

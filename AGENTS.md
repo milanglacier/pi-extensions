@@ -20,6 +20,7 @@ submodule, you MUST read its local AGENTS.md if it has one.
 - pi-background-tasks | github.com/milanglacier/pi-background-tasks | no
 - pi-minimal-permission-system | github.com/milanglacier/pi-minimal-permission-system | yes
 - pi-theme-switcher | github.com/milanglacier/pi-theme-switcher | no
+- pi-subagents | github.com/milanglacier/pi-subagents | yes
 - pi-tau-web-server | github.com/milanglacier/pi-tau-web-server | yes (not an extension)
 
 ## Commit messages
