@@ -25,3 +25,6 @@
 [submodule "pi-tau-web-server"]
 	path = pi-tau-web-server
 	url = https://github.com/milanglacier/pi-tau-web-server.git
+[submodule "pi-subagents"]
+	path = pi-subagents
+	url = https://github.com/milanglacier/pi-subagents.git
