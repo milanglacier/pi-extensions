@@ -22,13 +22,21 @@ submodule, you MUST read its local AGENTS.md if it has one.
 - pi-theme-switcher | github.com/milanglacier/pi-theme-switcher | no
 - pi-tau-web-server | github.com/milanglacier/pi-tau-web-server | yes (not an extension)
 
+## Commit messages
+
+Conventional Commits are mandatory for every commit in this monorepo, including
+submodule gitlink bumps. Use `<type>: <subject>` with a lowercase type
+(`feat:`, `fix:`, `chore:`, ...). Never omit the type prefix, even for a trivial
+bump — write `chore: bump pi-plan-mode`, not `bump pi-plan-mode`.
+
 ## Agent rules
 
 - Read the submodule's local AGENTS.md first (if it has one, see list above);
   it overrides this file for work in that submodule.
 - Submodules are independent repos: edit/test inside the submodule, commit there
   first (all submodules use `main`), then update the gitlink in this monorepo
-  (`git add <submodule>` + commit). Don't mix submodules in one commit.
+  (`git add <submodule>` + commit, with a Conventional Commit message as above).
+  Don't mix submodules in one commit.
 - Don't commit a submodule with a dirty working tree unless intentional.
 - Run a project's own commands (`npm run typecheck`, `npm test`) with the
   submodule as cwd; each pins its own node_modules.
