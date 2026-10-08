@@ -5,7 +5,9 @@ top-level directory is a git submodule pointing at its own GitHub repo; these
 are the real dev checkouts. The extensions are also symlinked from
 `~/.pi/agent/extensions/` so Pi loads them. `pi-tau-web-server` is not a pi
 extension — it is a pi-related project built on top of Pi, so it is not
-symlinked there. `CLAUDE.md` is a symlink to this file.
+symlinked there. `pi-multi-agent-skill` is a skill, not an extension: its
+`skills/multi-agent` directory is symlinked as `~/.pi/agent/skills/multi-agent`.
+`CLAUDE.md` is a symlink to this file.
 
 ## Submodules
 
@@ -22,6 +24,7 @@ submodule, you MUST read its local AGENTS.md if it has one.
 - pi-theme-switcher | github.com/milanglacier/pi-theme-switcher | no
 - pi-subagents | github.com/milanglacier/pi-subagents | yes
 - pi-tau-web-server | github.com/milanglacier/pi-tau-web-server | yes (not an extension)
+- pi-multi-agent-skill | github.com/milanglacier/pi-multi-agent-skill | no (a skill)
 
 ## Commit messages
 

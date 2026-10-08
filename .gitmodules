@@ -28,3 +28,6 @@
 [submodule "pi-subagents"]
 	path = pi-subagents
 	url = https://github.com/milanglacier/pi-subagents.git
+[submodule "pi-multi-agent-skill"]
+	path = pi-multi-agent-skill
+	url = https://github.com/milanglacier/pi-multi-agent-skill.git
