@@ -20,6 +20,24 @@ history browser, session tree/branching, and multi-device access. It is
 distributed on npm — install it with `npm install --global pi-tau-web-server`
 and run `pi-tau-web-server` — so it is not loaded as a pi extension.
 
+## Skills
+
+### [pi-multi-agent-skill](https://github.com/milanglacier/pi-multi-agent-skill)
+
+A lightweight alternative for [pi-subagents](#pi-subagents): a skill+cli
+combination that lets a pi agent start other pi agents as separate `pi --mode
+rpc` processes, run them in parallel or in the background, and wait for, steer,
+stop, or resume them. Each agent loads the same extensions, MCP servers,
+skills, and settings as an interactive pi, and a standard-library Python script
+keeps its state as a named job. Install by symlinking `skills/multi-agent` into
+`~/.pi/agent/skills/`.
+
+
+As a pure Skill and CLI interface, it operates without exposing direct tools,
+making it also compatible with other coding agents to orchestrate `pi`.
+Additionally, it optimizes context window usage through the progressive
+disclosure of its CLI subcommands and options.
+
 ## Extensions
 
 ### [pi-plan-mode](https://github.com/milanglacier/pi-plan-mode)
@@ -79,24 +97,17 @@ if the extension is loaded, the patch applies to matching requests.
 
 ### [pi-subagents](https://github.com/milanglacier/pi-subagents)
 
+
+**NOTE**: I am currently experimenting with the `pi-multi-agent-skill`—a
+lightweight, pure skill-and-CLI combination that exposes no tools—as a
+potential replacement for this extension.
+
 A fork of [tintinweb/pi-subagents](https://github.com/tintinweb/pi-subagents)
 maintained here: Claude Code-style autonomous sub-agents for pi. Spawn
 specialized agents in isolated sessions, each with its own tools, system
 prompt, model, and thinking level; run them in the background, steer them
 mid-run, resume finished sessions, define custom agent types, and orchestrate
 many at once with deterministic JavaScript workflows.
-
-## Skills
-
-### [pi-multi-agent-skill](https://github.com/milanglacier/pi-multi-agent-skill)
-
-A lightweight replacement for [pi-subagents](#pi-subagents): a skill that lets
-a pi agent start other pi agents as separate `pi --mode rpc` processes, run
-them in parallel or in the background, and wait for, steer, stop, or resume
-them. Each agent loads the same extensions, MCP servers, skills, and settings
-as an interactive pi, and a standard-library Python script keeps its state as a
-named job. Install by symlinking `skills/multi-agent` into
-`~/.pi/agent/skills/`.
 
 ## Development
 
