@@ -86,6 +86,18 @@ prompt, model, and thinking level; run them in the background, steer them
 mid-run, resume finished sessions, define custom agent types, and orchestrate
 many at once with deterministic JavaScript workflows.
 
+## Skills
+
+### [pi-multi-agent-skill](https://github.com/milanglacier/pi-multi-agent-skill)
+
+A lightweight replacement for [pi-subagents](#pi-subagents): a skill that lets
+a pi agent start other pi agents as separate `pi --mode rpc` processes, run
+them in parallel or in the background, and wait for, steer, stop, or resume
+them. Each agent loads the same extensions, MCP servers, skills, and settings
+as an interactive pi, and a standard-library Python script keeps its state as a
+named job. Install by symlinking `skills/multi-agent` into
+`~/.pi/agent/skills/`.
+
 ## Development
 
 Each top-level directory is a git submodule pointing at its own repository.
