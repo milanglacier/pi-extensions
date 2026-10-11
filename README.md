@@ -24,19 +24,16 @@ and run `pi-tau-web-server` — so it is not loaded as a pi extension.
 
 ### [pi-multi-agent-skill](https://github.com/milanglacier/pi-multi-agent-skill)
 
-A lightweight alternative for [pi-subagents](#pi-subagents): a skill+cli
-combination that lets a pi agent start other pi agents as separate `pi --mode
-rpc` processes, run them in parallel or in the background, and wait for, steer,
-stop, or resume them. Each agent loads the same extensions, MCP servers,
-skills, and settings as an interactive pi, and a standard-library Python script
-keeps its state as a named job. Install by symlinking `skills/multi-agent` into
+A minimal, lightweight alternative to [pi-subagents](#pi-subagents): a skill
+plus a CLI, with no extension and no new tools. Run agents in parallel or in
+the background, then wait for, steer, stop, or resume them. Each agent gets the
+same extensions, MCP servers, skills, and settings as your interactive pi.
+
+Because it is only a skill and a CLI, any harness or coding agent that has a
+shell can use it to orchestrate pi, not only pi itself. The agent reads about
+subcommands and options only when it needs them, so the skill costs little
+context. Install by symlinking `skills/multi-agent` into
 `~/.pi/agent/skills/`.
-
-
-As a pure Skill and CLI interface, it operates without exposing direct tools,
-making it also compatible with other coding agents to orchestrate `pi`.
-Additionally, it optimizes context window usage through the progressive
-disclosure of its CLI subcommands and options.
 
 ## Extensions
 
