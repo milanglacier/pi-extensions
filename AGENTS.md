@@ -41,9 +41,16 @@ bump — write `chore: bump pi-plan-mode`, not `bump pi-plan-mode`.
   first (all submodules use `main`), then update the gitlink in this monorepo
   (`git add <submodule>` + commit, with a Conventional Commit message as above).
   Don't mix submodules in one commit.
-- Don't update a submodule's gitlink while it is on a feature branch: that
-  work is in progress, so wait until it is merged to `main` and bump the ref
-  from there.
+- Record only commits from a submodule's `main` branch in parent gitlinks,
+  never in-progress feature-branch commits.
+- When bumping dependencies in a submodule checked out on a working branch
+  other than `main`, use a separate worktree based on `main`. Preserve the
+  original checkout's branch, files, and uncommitted work. Take the parent
+  gitlink from the `main` worktree, not the original working branch.
+- Keep the temporary worktree until the user asks to merge the bump to `main`.
+  After merging and recording the `main` commit in the parent gitlink, remove
+  that worktree as part of the merge cleanup. Verify it is clean first; never
+  force-remove a worktree containing uncommitted changes.
 - Don't commit a submodule with a dirty working tree unless intentional.
 - Run a project's own commands (`npm run typecheck`, `npm test`) with the
   submodule as cwd; each pins its own node_modules.
