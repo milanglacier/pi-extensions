@@ -39,11 +39,9 @@ context. Install by symlinking `skills/multi-agent` into
 
 ### [pi-request-user-input](https://github.com/milanglacier/pi-request-user-input)
 
-Adds the `request_user_input` tool without enabling plan mode. The model can
-ask one to three short questions, each open-ended or with multiple-choice
-options, and the answers come back as a readable summary plus structured tool
-details. Extracted from `pi-plan-mode` for sessions that do not need the rest of
-that extension.
+Adds the `request_user_input` tool. The model can ask one to three short
+questions, each open-ended or with multiple-choice options, and the answers come
+back as a readable summary plus structured tool details.
 
 ### [pi-dynamic-workflow](https://github.com/milanglacier/pi-dynamic-workflow)
 
