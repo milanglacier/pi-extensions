@@ -31,3 +31,6 @@
 [submodule "pi-multi-agent-skill"]
 	path = pi-multi-agent-skill
 	url = https://github.com/milanglacier/pi-multi-agent-skill.git
+[submodule "pi-request-user-input"]
+	path = pi-request-user-input
+	url = https://github.com/milanglacier/pi-request-user-input.git

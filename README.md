@@ -44,6 +44,14 @@ planning tools directly on the main conversation — no separate planner
 subagent — so you can think through architecture, capture decisions in a plan
 file, and resume planning state across sessions before writing code.
 
+### [pi-request-user-input](https://github.com/milanglacier/pi-request-user-input)
+
+Adds the `request_user_input` tool without enabling plan mode. The model can
+ask one to three short questions, each open-ended or with multiple-choice
+options, and the answers come back as a readable summary plus structured tool
+details. Extracted from `pi-plan-mode` for sessions that do not need the rest of
+that extension.
+
 ### [pi-dynamic-workflow](https://github.com/milanglacier/pi-dynamic-workflow)
 
 Lets the LLM author a small JavaScript orchestration script on the fly and fan

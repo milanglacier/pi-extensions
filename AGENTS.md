@@ -15,6 +15,7 @@ Format: submodule | GitHub repo | has AGENTS.md. Before working on a
 submodule, you MUST read its local AGENTS.md if it has one.
 
 - pi-plan-mode | github.com/milanglacier/pi-plan-mode | yes
+- pi-request-user-input | github.com/milanglacier/pi-request-user-input | yes
 - pi-session-model | github.com/milanglacier/pi-session-model | no
 - pi-dynamic-workflow | github.com/milanglacier/pi-dynamic-workflow | yes
 - pi-gemini-patch | github.com/milanglacier/pi-gemini-patch | no
