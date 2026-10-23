@@ -105,6 +105,17 @@ prompt, model, and thinking level; run them in the background, steer them
 mid-run, resume finished sessions, define custom agent types, and orchestrate
 many at once with deterministic JavaScript workflows.
 
+## Obsolete extensions
+
+### ~~[pi-plan-mode](https://github.com/milanglacier/pi-plan-mode)~~
+
+Structured planning mode for pi: `/plan` injected a planning prompt and exposed
+planning tools directly on the main conversation. No longer maintained and
+removed from this monorepo. [pi-request-user-input](#pi-request-user-input),
+which was extracted from it, replaced it because I no longer use plan mode. I
+still let the agent draft a plan before implementing, but a dedicated plan mode
+is no longer needed.
+
 ## Development
 
 Each top-level directory is a git submodule pointing at its own repository.
