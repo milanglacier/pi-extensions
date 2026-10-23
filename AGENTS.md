@@ -14,7 +14,6 @@ symlinked there. `pi-multi-agent-skill` is a skill, not an extension: its
 Format: submodule | GitHub repo | has AGENTS.md. Before working on a
 submodule, you MUST read its local AGENTS.md if it has one.
 
-- pi-plan-mode | github.com/milanglacier/pi-plan-mode | yes
 - pi-request-user-input | github.com/milanglacier/pi-request-user-input | yes
 - pi-session-model | github.com/milanglacier/pi-session-model | no
 - pi-dynamic-workflow | github.com/milanglacier/pi-dynamic-workflow | yes
@@ -32,7 +31,7 @@ submodule, you MUST read its local AGENTS.md if it has one.
 Conventional Commits are mandatory for every commit in this monorepo, including
 submodule gitlink bumps. Use `<type>: <subject>` with a lowercase type
 (`feat:`, `fix:`, `chore:`, ...). Never omit the type prefix, even for a trivial
-bump — write `chore: bump pi-plan-mode`, not `bump pi-plan-mode`.
+bump — write `chore: bump pi-request-user-input`, not `bump pi-request-user-input`.
 
 ## Agent rules
 

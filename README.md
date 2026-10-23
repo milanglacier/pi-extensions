@@ -37,13 +37,6 @@ context. Install by symlinking `skills/multi-agent` into
 
 ## Extensions
 
-### [pi-plan-mode](https://github.com/milanglacier/pi-plan-mode)
-
-Structured planning mode for pi. `/plan` injects a planning prompt and exposes
-planning tools directly on the main conversation — no separate planner
-subagent — so you can think through architecture, capture decisions in a plan
-file, and resume planning state across sessions before writing code.
-
 ### [pi-request-user-input](https://github.com/milanglacier/pi-request-user-input)
 
 Adds the `request_user_input` tool without enabling plan mode. The model can

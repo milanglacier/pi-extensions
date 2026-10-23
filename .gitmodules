@@ -1,6 +1,3 @@
-[submodule "pi-plan-mode"]
-	path = pi-plan-mode
-	url = https://github.com/milanglacier/pi-plan-mode.git
 [submodule "pi-session-model"]
 	path = pi-session-model
 	url = https://github.com/milanglacier/pi-session-model.git
