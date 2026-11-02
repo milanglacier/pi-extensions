@@ -24,7 +24,7 @@ submodule, you MUST read its local AGENTS.md if it has one.
 - pi-theme-switcher | github.com/milanglacier/pi-theme-switcher | no
 - pi-subagents | github.com/milanglacier/pi-subagents | yes
 - pi-tau-web-server | github.com/milanglacier/pi-tau-web-server | yes (not an extension)
-- pi-multi-agent-skill | github.com/milanglacier/pi-multi-agent-skill | no (a skill)
+- pi-multi-agent-skill | github.com/milanglacier/pi-multi-agent-skill | yes (a skill)
 
 ## Commit messages
 
@@ -32,6 +32,24 @@ Conventional Commits are mandatory for every commit in this monorepo, including
 submodule gitlink bumps. Use `<type>: <subject>` with a lowercase type
 (`feat:`, `fix:`, `chore:`, ...). Never omit the type prefix, even for a trivial
 bump — write `chore: bump pi-request-user-input`, not `bump pi-request-user-input`.
+
+## Changelogs
+
+Every submodule except pi-tau-web-server keeps a `CHANGELOG.md` at its root,
+listed in `package.json` `files`, in pi's changelog convention. Pi shows new
+entries to users after a package update.
+
+- Record each user-facing change under `## [Unreleased]` at the top, in the
+  commit that makes it. Group entries as `### Breaking Changes` (with the
+  migration step), `### Added`, `### Changed`, `### Fixed`, or `### Removed`.
+- Keep entries to one or two short sentences written for users. Skip docs,
+  tests, CI, refactors, dependency bumps, and trivial fixes, but do record
+  changes to the supported Pi range.
+- Link issues and PRs: `([#12](url))`, or `([#12](url) by [@user](url))` for
+  external contributions.
+- On release, rename `[Unreleased]` to `## [x.y.z] - YYYY-MM-DD`. The version
+  must equal `package.json` `version`, because Pi matches headings against it.
+  Released sections are immutable.
 
 ## Agent rules
 
