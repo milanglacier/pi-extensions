@@ -35,9 +35,9 @@ bump — write `chore: bump pi-request-user-input`, not `bump pi-request-user-in
 
 ## Changelogs
 
-Every submodule except pi-tau-web-server keeps a `CHANGELOG.md` at its root,
-listed in `package.json` `files`, in pi's changelog convention. Pi shows new
-entries to users after a package update.
+Every submodule keeps a `CHANGELOG.md` at its root, listed in `package.json`
+`files`, in pi's changelog convention. Pi shows new entries to users after a
+package update.
 
 - Record each user-facing change under `## [Unreleased]` at the top, in the
   commit that makes it. Group entries as `### Breaking Changes` (with the
