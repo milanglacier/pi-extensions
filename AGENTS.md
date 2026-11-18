@@ -51,6 +51,50 @@ package update.
   must equal `package.json` `version`, because Pi matches headings against it.
   Released sections are immutable.
 
+## Tests
+
+Add a test only when it protects behavior that users rely on, or a contract that
+other code depends on. Every test must be worth its maintenance and run time.
+
+- Write a regression test only for a bug that shipped, meaning it reached a
+  released version. Bugs in features still under development have not shipped,
+  including mistakes made and fixed during the same task. For those, fix the
+  bug and move on. If the feature's behavior needs coverage, test the final
+  behavior, not the mistake made along the way, and do not call it a regression
+  test.
+- Do not write tests for test tooling: benchmarks, fixtures, test harnesses, or
+  debugging scripts. To check them, run them once and report the result.
+- Do not lock incidental details into tests, such as fixture hashes, exact item
+  counts, or generated sizes, unless that value is a real contract.
+- If you are unsure whether a test is worth keeping, ask instead of adding it.
+
+## README
+
+Like changelog entries, the README is written for people who install and use
+the project. It covers what the project does, how to install, configure, and
+run it, the available commands and flags, and how to read their output.
+
+- Keep implementation details out of the README: how something works inside,
+  internal names, JSON field names, test or benchmark setup, fixture contents
+  and counts, and investigation results. Put those in code comments, plans,
+  review notes, or commit messages.
+- Edit the README only when a change affects what a user does or sees. Do not
+  update it as a side effect of debugging, investigating, or measuring
+  performance.
+
+## Code review
+
+When asked to review a change, run the style review in its own subagent that
+follows the `review-style` skill and checks only code and writing style. Keep
+logic reviews, which cover correctness, behavior, performance, security, and
+test coverage, out of that subagent; split them across as many reviewers as the
+change needs.
+
+Merge all results into one review and remove duplicates. Keep the style
+reviewer's `[S1]`–`[S3]` tags so style findings stay apart from the logic
+findings' `[P0]`–`[P3]` tags. If subagents are not available, do the style
+review as a separate pass after the logic review.
+
 ## Agent rules
 
 - Read the submodule's local AGENTS.md first (if it has one, see list above);
